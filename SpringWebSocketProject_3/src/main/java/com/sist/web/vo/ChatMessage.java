@@ -1,5 +1,8 @@
 package com.sist.web.vo;
 
+import lombok.Data;
+
+@Data
 public class ChatMessage {
 
 	private String type; // 전체 / 1:1

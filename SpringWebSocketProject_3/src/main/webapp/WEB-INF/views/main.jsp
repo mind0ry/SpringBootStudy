@@ -27,7 +27,7 @@ h3 {
     <table class="table">
       <tbody>
 
-        <sec:authorize access="isAnonymous()">
+        <sec:authorize access="!isAuthenticated()">
           <tr>
             <td class="text-center">
               <a href="/login" class="btn btn-sm btn-danger">로그인</a>
@@ -50,17 +50,9 @@ h3 {
 
           <tr>
             <td class="text-center">
-              <a href="#" class="btn btn-sm btn-primary">일반채팅</a>
+              <a href="/chat" class="btn btn-sm btn-primary">채팅</a>
             </td>
           </tr>
-
-          <sec:authorize access="hasRole('USER')">
-            <tr>
-              <td class="text-center">
-                <a href="#" class="btn btn-sm btn-info">1:1채팅</a>
-              </td>
-            </tr>
-          </sec:authorize>
 
           <sec:authorize access="hasRole('ADMIN')">
             <tr>

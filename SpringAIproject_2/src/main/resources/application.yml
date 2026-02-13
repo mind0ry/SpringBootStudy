@@ -20,7 +20,7 @@ spring:
   ai:
     google:
       genai:
-        api-key: AIzaSyAP7nO_8-d8RTG0ITqajrsKR5Khukk-iiY
+        api-key:
 
 
 mybatis:
